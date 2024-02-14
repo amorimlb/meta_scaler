@@ -1,5 +1,5 @@
 # Meta_scaler
-This repository is home for the files related to the paper "Meta-scaler: a meta-learning framework for the selection of scaling techniques". 
+This repository is home for the files related to the paper "Meta-scaler: a meta-learning framework for the selection of scaling techniques" (https://doi.org/10.1109/TNNLS.2024.3366615). 
 The files are arranged in the directory structure in a very intuitive way, but some explanation is required for the 'code' directory:
 - The code is distributed in 10 IPython Notebooks (.ipynb) and one R notebook (.rmd).
 - If one wants to reproduce the whole experiment, all the statistical analysis and reproduce all figures and tables in the paper, this is the order of execution:
@@ -15,4 +15,4 @@ The files are arranged in the directory structure in a very intuitive way, but s
 10. 'code/Reproducing_Zagatti_et_al/02_Reproducing_Zagatti_SOTA_comp.ipynb'
 11. 'code/07B_analysis_SOTA_comparison.ipynb'
 
-Note that the file environment.yml presents our best effort to record the necessary software environment requiriments to execute the project, but some mismatches may happen as this was executed in several different machines.
+Note that the file 'code/environment.yml' presents our best effort to record the necessary software environment requiriments to execute the project, but some mismatches may happen as this was executed in several different machines.
