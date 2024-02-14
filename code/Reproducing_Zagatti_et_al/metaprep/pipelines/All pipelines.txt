@@ -1,0 +1,437 @@
+=======================================================
+CASO 1: Without categorical and nulls
+=======================================================
+
+no_prep
+MinMax ->
+StandardScaler ->
+Normalizer ->
+undersampling
+oversampling
+MinMax ->undersampling
+MinMax ->oversampling
+StandardScaler ->undersampling
+StandardScaler ->oversampling
+Normalizer ->undersampling
+Normalizer ->oversampling
+
+=======================================================
+CASO 2: Without categorical, but have nulls
+=======================================================
+
+imputation_deletion_case ->
+imputation_mean ->
+imputation_median ->
+imputation_most_frequent ->
+imputation_deletion_case ->MinMax ->
+imputation_deletion_case ->StandardScaler ->
+imputation_deletion_case ->Normalizer ->
+imputation_mean ->MinMax ->
+imputation_mean ->StandardScaler ->
+imputation_mean ->Normalizer ->
+imputation_median ->MinMax ->
+imputation_median ->StandardScaler ->
+imputation_median ->Normalizer ->
+imputation_most_frequent ->MinMax ->
+imputation_most_frequent ->StandardScaler ->
+imputation_most_frequent ->Normalizer ->
+imputation_deletion_case ->undersampling
+imputation_deletion_case ->oversampling
+imputation_mean ->undersampling
+imputation_mean ->oversampling
+imputation_median ->undersampling
+imputation_median ->oversampling
+imputation_most_frequent ->undersampling
+imputation_most_frequent ->oversampling
+imputation_deletion_case ->MinMax ->undersampling
+imputation_deletion_case ->MinMax ->oversampling
+imputation_deletion_case ->StandardScaler ->undersampling
+imputation_deletion_case ->StandardScaler ->oversampling
+imputation_deletion_case ->Normalizer ->undersampling
+imputation_deletion_case ->Normalizer ->oversampling
+imputation_mean ->MinMax ->undersampling
+imputation_mean ->MinMax ->oversampling
+imputation_mean ->StandardScaler ->undersampling
+imputation_mean ->StandardScaler ->oversampling
+imputation_mean ->Normalizer ->undersampling
+imputation_mean ->Normalizer ->oversampling
+imputation_median ->MinMax ->undersampling
+imputation_median ->MinMax ->oversampling
+imputation_median ->StandardScaler ->undersampling
+imputation_median ->StandardScaler ->oversampling
+imputation_median ->Normalizer ->undersampling
+imputation_median ->Normalizer ->oversampling
+imputation_most_frequent ->MinMax ->undersampling
+imputation_most_frequent ->MinMax ->oversampling
+imputation_most_frequent ->StandardScaler ->undersampling
+imputation_most_frequent ->StandardScaler ->oversampling
+imputation_most_frequent ->Normalizer ->undersampling
+imputation_most_frequent ->Normalizer ->oversampling
+
+=======================================================
+CASO 3: Without nulls, but have categorical
+=======================================================
+
+label_encoder ->
+One-hot-encoding ->
+label_encoder ->MinMax ->
+label_encoder ->StandardScaler ->
+label_encoder ->Normalizer ->
+One-hot-encoding ->MinMax ->
+One-hot-encoding ->StandardScaler ->
+One-hot-encoding ->Normalizer ->
+label_encoder ->undersampling
+label_encoder ->oversampling
+One-hot-encoding ->undersampling
+One-hot-encoding ->oversampling
+label_encoder ->MinMax ->undersampling
+label_encoder ->MinMax ->oversampling
+label_encoder ->StandardScaler ->undersampling
+label_encoder ->StandardScaler ->oversampling
+label_encoder ->Normalizer ->undersampling
+label_encoder ->Normalizer ->oversampling
+One-hot-encoding ->MinMax ->undersampling
+One-hot-encoding ->MinMax ->oversampling
+One-hot-encoding ->StandardScaler ->undersampling
+One-hot-encoding ->StandardScaler ->oversampling
+One-hot-encoding ->Normalizer ->undersampling
+One-hot-encoding ->Normalizer ->oversampling
+
+=======================================================
+CASE 4: With categorical data, null only in categorical
+=======================================================
+
+imputation_deletion_case ->label_encoder ->
+imputation_deletion_case ->One-hot-encoding ->
+imputation_most_frequent ->label_encoder ->
+imputation_most_frequent ->One-hot-encoding ->
+imputation_deletion_case ->label_encoder ->MinMax ->
+imputation_deletion_case ->label_encoder ->StandardScaler ->
+imputation_deletion_case ->label_encoder ->Normalizer ->
+imputation_deletion_case ->One-hot-encoding ->MinMax ->
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->
+imputation_most_frequent ->label_encoder ->MinMax ->
+imputation_most_frequent ->label_encoder ->StandardScaler ->
+imputation_most_frequent ->label_encoder ->Normalizer ->
+imputation_most_frequent ->One-hot-encoding ->MinMax ->
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->
+imputation_deletion_case ->label_encoder ->undersampling
+imputation_deletion_case ->label_encoder ->oversampling
+imputation_deletion_case ->One-hot-encoding ->undersampling
+imputation_deletion_case ->One-hot-encoding ->oversampling
+imputation_most_frequent ->label_encoder ->undersampling
+imputation_most_frequent ->label_encoder ->oversampling
+imputation_most_frequent ->One-hot-encoding ->undersampling
+imputation_most_frequent ->One-hot-encoding ->oversampling
+imputation_deletion_case ->label_encoder ->MinMax ->undersampling
+imputation_deletion_case ->label_encoder ->MinMax ->oversampling
+imputation_deletion_case ->label_encoder ->StandardScaler ->undersampling
+imputation_deletion_case ->label_encoder ->StandardScaler ->oversampling
+imputation_deletion_case ->label_encoder ->Normalizer ->undersampling
+imputation_deletion_case ->label_encoder ->Normalizer ->oversampling
+imputation_deletion_case ->One-hot-encoding ->MinMax ->undersampling
+imputation_deletion_case ->One-hot-encoding ->MinMax ->oversampling
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->undersampling
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->oversampling
+imputation_most_frequent ->label_encoder ->MinMax ->undersampling
+imputation_most_frequent ->label_encoder ->MinMax ->oversampling
+imputation_most_frequent ->label_encoder ->StandardScaler ->undersampling
+imputation_most_frequent ->label_encoder ->StandardScaler ->oversampling
+imputation_most_frequent ->label_encoder ->Normalizer ->undersampling
+imputation_most_frequent ->label_encoder ->Normalizer ->oversampling
+imputation_most_frequent ->One-hot-encoding ->MinMax ->undersampling
+imputation_most_frequent ->One-hot-encoding ->MinMax ->oversampling
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->undersampling
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->oversampling
+
+=======================================================
+CASE 5: With categorical data, null only in numerical
+=======================================================
+
+imputation_deletion_case ->label_encoder ->
+imputation_deletion_case ->One-hot-encoding ->
+imputation_mean ->label_encoder ->
+imputation_mean ->One-hot-encoding ->
+imputation_median ->label_encoder ->
+imputation_median ->One-hot-encoding ->
+imputation_most_frequent ->label_encoder ->
+imputation_most_frequent ->One-hot-encoding ->
+imputation_deletion_case ->label_encoder ->MinMax ->
+imputation_deletion_case ->label_encoder ->StandardScaler ->
+imputation_deletion_case ->label_encoder ->Normalizer ->
+imputation_deletion_case ->One-hot-encoding ->MinMax ->
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->
+imputation_mean ->label_encoder ->MinMax ->
+imputation_mean ->label_encoder ->StandardScaler ->
+imputation_mean ->label_encoder ->Normalizer ->
+imputation_mean ->One-hot-encoding ->MinMax ->
+imputation_mean ->One-hot-encoding ->StandardScaler ->
+imputation_mean ->One-hot-encoding ->Normalizer ->
+imputation_median ->label_encoder ->MinMax ->
+imputation_median ->label_encoder ->StandardScaler ->
+imputation_median ->label_encoder ->Normalizer ->
+imputation_median ->One-hot-encoding ->MinMax ->
+imputation_median ->One-hot-encoding ->StandardScaler ->
+imputation_median ->One-hot-encoding ->Normalizer ->
+imputation_most_frequent ->label_encoder ->MinMax ->
+imputation_most_frequent ->label_encoder ->StandardScaler ->
+imputation_most_frequent ->label_encoder ->Normalizer ->
+imputation_most_frequent ->One-hot-encoding ->MinMax ->
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->
+imputation_deletion_case ->label_encoder ->undersampling
+imputation_deletion_case ->label_encoder ->oversampling
+imputation_deletion_case ->One-hot-encoding ->undersampling
+imputation_deletion_case ->One-hot-encoding ->oversampling
+imputation_mean ->label_encoder ->undersampling
+imputation_mean ->label_encoder ->oversampling
+imputation_mean ->One-hot-encoding ->undersampling
+imputation_mean ->One-hot-encoding ->oversampling
+imputation_median ->label_encoder ->undersampling
+imputation_median ->label_encoder ->oversampling
+imputation_median ->One-hot-encoding ->undersampling
+imputation_median ->One-hot-encoding ->oversampling
+imputation_most_frequent ->label_encoder ->undersampling
+imputation_most_frequent ->label_encoder ->oversampling
+imputation_most_frequent ->One-hot-encoding ->undersampling
+imputation_most_frequent ->One-hot-encoding ->oversampling
+imputation_deletion_case ->label_encoder ->MinMax ->undersampling
+imputation_deletion_case ->label_encoder ->MinMax ->oversampling
+imputation_deletion_case ->label_encoder ->StandardScaler ->undersampling
+imputation_deletion_case ->label_encoder ->StandardScaler ->oversampling
+imputation_deletion_case ->label_encoder ->Normalizer ->undersampling
+imputation_deletion_case ->label_encoder ->Normalizer ->oversampling
+imputation_deletion_case ->One-hot-encoding ->MinMax ->undersampling
+imputation_deletion_case ->One-hot-encoding ->MinMax ->oversampling
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->undersampling
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->oversampling
+imputation_mean ->label_encoder ->MinMax ->undersampling
+imputation_mean ->label_encoder ->MinMax ->oversampling
+imputation_mean ->label_encoder ->StandardScaler ->undersampling
+imputation_mean ->label_encoder ->StandardScaler ->oversampling
+imputation_mean ->label_encoder ->Normalizer ->undersampling
+imputation_mean ->label_encoder ->Normalizer ->oversampling
+imputation_mean ->One-hot-encoding ->MinMax ->undersampling
+imputation_mean ->One-hot-encoding ->MinMax ->oversampling
+imputation_mean ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_mean ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_mean ->One-hot-encoding ->Normalizer ->undersampling
+imputation_mean ->One-hot-encoding ->Normalizer ->oversampling
+imputation_median ->label_encoder ->MinMax ->undersampling
+imputation_median ->label_encoder ->MinMax ->oversampling
+imputation_median ->label_encoder ->StandardScaler ->undersampling
+imputation_median ->label_encoder ->StandardScaler ->oversampling
+imputation_median ->label_encoder ->Normalizer ->undersampling
+imputation_median ->label_encoder ->Normalizer ->oversampling
+imputation_median ->One-hot-encoding ->MinMax ->undersampling
+imputation_median ->One-hot-encoding ->MinMax ->oversampling
+imputation_median ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_median ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_median ->One-hot-encoding ->Normalizer ->undersampling
+imputation_median ->One-hot-encoding ->Normalizer ->oversampling
+imputation_most_frequent ->label_encoder ->MinMax ->undersampling
+imputation_most_frequent ->label_encoder ->MinMax ->oversampling
+imputation_most_frequent ->label_encoder ->StandardScaler ->undersampling
+imputation_most_frequent ->label_encoder ->StandardScaler ->oversampling
+imputation_most_frequent ->label_encoder ->Normalizer ->undersampling
+imputation_most_frequent ->label_encoder ->Normalizer ->oversampling
+imputation_most_frequent ->One-hot-encoding ->MinMax ->undersampling
+imputation_most_frequent ->One-hot-encoding ->MinMax ->oversampling
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->undersampling
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->oversampling
+
+=======================================================
+ALL CASES
+=======================================================
+
+no_prep
+imputation_deletion_case ->
+imputation_mean ->
+imputation_median ->
+imputation_most_frequent ->
+label_encoder ->
+One-hot-encoding ->
+MinMax ->
+StandardScaler ->
+Normalizer ->
+undersampling
+oversampling
+imputation_deletion_case ->label_encoder ->
+imputation_deletion_case ->One-hot-encoding ->
+imputation_mean ->label_encoder ->
+imputation_mean ->One-hot-encoding ->
+imputation_median ->label_encoder ->
+imputation_median ->One-hot-encoding ->
+imputation_most_frequent ->label_encoder ->
+imputation_most_frequent ->One-hot-encoding ->
+imputation_deletion_case ->MinMax ->
+imputation_deletion_case ->StandardScaler ->
+imputation_deletion_case ->Normalizer ->
+imputation_mean ->MinMax ->
+imputation_mean ->StandardScaler ->
+imputation_mean ->Normalizer ->
+imputation_median ->MinMax ->
+imputation_median ->StandardScaler ->
+imputation_median ->Normalizer ->
+imputation_most_frequent ->MinMax ->
+imputation_most_frequent ->StandardScaler ->
+imputation_most_frequent ->Normalizer ->
+imputation_deletion_case ->undersampling
+imputation_deletion_case ->oversampling
+imputation_mean ->undersampling
+imputation_mean ->oversampling
+imputation_median ->undersampling
+imputation_median ->oversampling
+imputation_most_frequent ->undersampling
+imputation_most_frequent ->oversampling
+label_encoder ->MinMax ->
+label_encoder ->StandardScaler ->
+label_encoder ->Normalizer ->
+One-hot-encoding ->MinMax ->
+One-hot-encoding ->StandardScaler ->
+One-hot-encoding ->Normalizer ->
+label_encoder ->undersampling
+label_encoder ->oversampling
+One-hot-encoding ->undersampling
+One-hot-encoding ->oversampling
+MinMax ->undersampling
+MinMax ->oversampling
+StandardScaler ->undersampling
+StandardScaler ->oversampling
+Normalizer ->undersampling
+Normalizer ->oversampling
+imputation_deletion_case ->label_encoder ->MinMax ->
+imputation_deletion_case ->label_encoder ->StandardScaler ->
+imputation_deletion_case ->label_encoder ->Normalizer ->
+imputation_deletion_case ->One-hot-encoding ->MinMax ->
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->
+imputation_mean ->label_encoder ->MinMax ->
+imputation_mean ->label_encoder ->StandardScaler ->
+imputation_mean ->label_encoder ->Normalizer ->
+imputation_mean ->One-hot-encoding ->MinMax ->
+imputation_mean ->One-hot-encoding ->StandardScaler ->
+imputation_mean ->One-hot-encoding ->Normalizer ->
+imputation_median ->label_encoder ->MinMax ->
+imputation_median ->label_encoder ->StandardScaler ->
+imputation_median ->label_encoder ->Normalizer ->
+imputation_median ->One-hot-encoding ->MinMax ->
+imputation_median ->One-hot-encoding ->StandardScaler ->
+imputation_median ->One-hot-encoding ->Normalizer ->
+imputation_most_frequent ->label_encoder ->MinMax ->
+imputation_most_frequent ->label_encoder ->StandardScaler ->
+imputation_most_frequent ->label_encoder ->Normalizer ->
+imputation_most_frequent ->One-hot-encoding ->MinMax ->
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->
+imputation_deletion_case ->label_encoder ->undersampling
+imputation_deletion_case ->label_encoder ->oversampling
+imputation_deletion_case ->One-hot-encoding ->undersampling
+imputation_deletion_case ->One-hot-encoding ->oversampling
+imputation_mean ->label_encoder ->undersampling
+imputation_mean ->label_encoder ->oversampling
+imputation_mean ->One-hot-encoding ->undersampling
+imputation_mean ->One-hot-encoding ->oversampling
+imputation_median ->label_encoder ->undersampling
+imputation_median ->label_encoder ->oversampling
+imputation_median ->One-hot-encoding ->undersampling
+imputation_median ->One-hot-encoding ->oversampling
+imputation_most_frequent ->label_encoder ->undersampling
+imputation_most_frequent ->label_encoder ->oversampling
+imputation_most_frequent ->One-hot-encoding ->undersampling
+imputation_most_frequent ->One-hot-encoding ->oversampling
+imputation_deletion_case ->MinMax ->undersampling
+imputation_deletion_case ->MinMax ->oversampling
+imputation_deletion_case ->StandardScaler ->undersampling
+imputation_deletion_case ->StandardScaler ->oversampling
+imputation_deletion_case ->Normalizer ->undersampling
+imputation_deletion_case ->Normalizer ->oversampling
+imputation_mean ->MinMax ->undersampling
+imputation_mean ->MinMax ->oversampling
+imputation_mean ->StandardScaler ->undersampling
+imputation_mean ->StandardScaler ->oversampling
+imputation_mean ->Normalizer ->undersampling
+imputation_mean ->Normalizer ->oversampling
+imputation_median ->MinMax ->undersampling
+imputation_median ->MinMax ->oversampling
+imputation_median ->StandardScaler ->undersampling
+imputation_median ->StandardScaler ->oversampling
+imputation_median ->Normalizer ->undersampling
+imputation_median ->Normalizer ->oversampling
+imputation_most_frequent ->MinMax ->undersampling
+imputation_most_frequent ->MinMax ->oversampling
+imputation_most_frequent ->StandardScaler ->undersampling
+imputation_most_frequent ->StandardScaler ->oversampling
+imputation_most_frequent ->Normalizer ->undersampling
+imputation_most_frequent ->Normalizer ->oversampling
+label_encoder ->MinMax ->undersampling
+label_encoder ->MinMax ->oversampling
+label_encoder ->StandardScaler ->undersampling
+label_encoder ->StandardScaler ->oversampling
+label_encoder ->Normalizer ->undersampling
+label_encoder ->Normalizer ->oversampling
+One-hot-encoding ->MinMax ->undersampling
+One-hot-encoding ->MinMax ->oversampling
+One-hot-encoding ->StandardScaler ->undersampling
+One-hot-encoding ->StandardScaler ->oversampling
+One-hot-encoding ->Normalizer ->undersampling
+One-hot-encoding ->Normalizer ->oversampling
+imputation_deletion_case ->label_encoder ->MinMax ->undersampling
+imputation_deletion_case ->label_encoder ->MinMax ->oversampling
+imputation_deletion_case ->label_encoder ->StandardScaler ->undersampling
+imputation_deletion_case ->label_encoder ->StandardScaler ->oversampling
+imputation_deletion_case ->label_encoder ->Normalizer ->undersampling
+imputation_deletion_case ->label_encoder ->Normalizer ->oversampling
+imputation_deletion_case ->One-hot-encoding ->MinMax ->undersampling
+imputation_deletion_case ->One-hot-encoding ->MinMax ->oversampling
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_deletion_case ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->undersampling
+imputation_deletion_case ->One-hot-encoding ->Normalizer ->oversampling
+imputation_mean ->label_encoder ->MinMax ->undersampling
+imputation_mean ->label_encoder ->MinMax ->oversampling
+imputation_mean ->label_encoder ->StandardScaler ->undersampling
+imputation_mean ->label_encoder ->StandardScaler ->oversampling
+imputation_mean ->label_encoder ->Normalizer ->undersampling
+imputation_mean ->label_encoder ->Normalizer ->oversampling
+imputation_mean ->One-hot-encoding ->MinMax ->undersampling
+imputation_mean ->One-hot-encoding ->MinMax ->oversampling
+imputation_mean ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_mean ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_mean ->One-hot-encoding ->Normalizer ->undersampling
+imputation_mean ->One-hot-encoding ->Normalizer ->oversampling
+imputation_median ->label_encoder ->MinMax ->undersampling
+imputation_median ->label_encoder ->MinMax ->oversampling
+imputation_median ->label_encoder ->StandardScaler ->undersampling
+imputation_median ->label_encoder ->StandardScaler ->oversampling
+imputation_median ->label_encoder ->Normalizer ->undersampling
+imputation_median ->label_encoder ->Normalizer ->oversampling
+imputation_median ->One-hot-encoding ->MinMax ->undersampling
+imputation_median ->One-hot-encoding ->MinMax ->oversampling
+imputation_median ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_median ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_median ->One-hot-encoding ->Normalizer ->undersampling
+imputation_median ->One-hot-encoding ->Normalizer ->oversampling
+imputation_most_frequent ->label_encoder ->MinMax ->undersampling
+imputation_most_frequent ->label_encoder ->MinMax ->oversampling
+imputation_most_frequent ->label_encoder ->StandardScaler ->undersampling
+imputation_most_frequent ->label_encoder ->StandardScaler ->oversampling
+imputation_most_frequent ->label_encoder ->Normalizer ->undersampling
+imputation_most_frequent ->label_encoder ->Normalizer ->oversampling
+imputation_most_frequent ->One-hot-encoding ->MinMax ->undersampling
+imputation_most_frequent ->One-hot-encoding ->MinMax ->oversampling
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->undersampling
+imputation_most_frequent ->One-hot-encoding ->StandardScaler ->oversampling
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->undersampling
+imputation_most_frequent ->One-hot-encoding ->Normalizer ->oversampling

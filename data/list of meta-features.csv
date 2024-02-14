@@ -1,0 +1,134 @@
+#,Meta-feature,Type,Subtype,Origin,Description
+1,ch,Clustering,clustering,PyMFE,Calinski and Harabasz index.
+2,int,Clustering,clustering,PyMFE,INT index.
+3,nre,Clustering,clustering,PyMFE,Normalized relative entropy.
+4,pb,Clustering,clustering,PyMFE,Pearson correlation between class matching and instance distances.
+5,sc,Clustering,clustering,PyMFE,Number of clusters with size smaller than a given size.
+6,sil,Clustering,clustering,PyMFE,Mean silhouette value.
+7,vdb,Clustering,clustering,PyMFE,Davies and Bouldin Index.
+8,vdu,Clustering,clustering,PyMFE,Dunn Index.
+9,c1,Concept & complexity,complexity,PyMFE,Entropy of class proportions.
+10,c2,Concept & complexity,complexity,PyMFE,Imbalance ratio.
+11,cls_coef,Concept & complexity,complexity,PyMFE,Clustering coefficient.
+12,density,Concept & complexity,complexity,PyMFE,Average density of the network.
+13,f1.mean,Concept & complexity,complexity,PyMFE,Maximum Fisher’s discriminant ratio.
+14,f1v.mean,Concept & complexity,complexity,PyMFE,Directional-vector maximum Fisher’s discriminant ratio.
+15,f2.mean,Concept & complexity,complexity,PyMFE,Volume of the overlapping region.
+16,f3.mean,Concept & complexity,complexity,PyMFE,Compute feature maximum individual efficiency.
+17,f4.mean,Concept & complexity,complexity,PyMFE,Collective feature efficiency.
+18,hubs.mean,Concept & complexity,complexity,PyMFE,Hub score.
+19,l1.mean,Concept & complexity,complexity,PyMFE,Sum of error distance by linear programming.
+20,l2.mean,Concept & complexity,complexity,PyMFE,OVO subsets error rate of linear classifier.
+21,l3.mean,Concept & complexity,complexity,PyMFE,Non-Linearity of a linear classifier.
+22,lsc,Concept & complexity,complexity,PyMFE,Local set average cardinality.
+23,n1,Concept & complexity,complexity,PyMFE,Fraction of borderline points.
+24,n2.mean,Concept & complexity,complexity,PyMFE,Ratio of intra and extra class nearest neighbor distance.
+25,n3.mean,Concept & complexity,complexity,PyMFE,Error rate of the nearest neighbor classifier.
+26,n4.mean,Concept & complexity,complexity,PyMFE,Non-linearity of the k-NN Classifier.
+27,t1.mean,Concept & complexity,complexity,PyMFE,Fraction of hyperspheres covering data.
+28,t2,Concept & complexity,complexity,PyMFE,Average number of features per dimension.
+29,t3,Concept & complexity,complexity,PyMFE,Average number of PCA dimensions per points.
+30,t4,Concept & complexity,complexity,PyMFE,Ratio of the PCA dimension to the original dimension.
+31,cohesiveness.mean,Concept & complexity,concept,PyMFE,Improved version of the weighted distance. It captures how dense or sparse is the example distribution.
+32,conceptvar.mean,Concept & complexity,concept,PyMFE,Concept variation that estimates the variability of class labels among examples.
+33,impconceptvar.mean,Concept & complexity,concept,PyMFE,Improved concept variation that estimates the variability of class labels among examples.
+34,wg_dist.mean,Concept & complexity,concept,PyMFE,Weighted distance. Captures how dense or sparse is the example distribution.
+35,attr_to_inst,"Simple, stats & info-theory",general,PyMFE,Ratio between the number of attributes and instances.
+36,cat_to_num,"Simple, stats & info-theory",general,PyMFE,Ratio between the number of categoric and numeric features.
+37,freq_class.mean,"Simple, stats & info-theory",general,PyMFE,Relative frequency of each distinct class.
+38,inst_to_attr,"Simple, stats & info-theory",general,PyMFE,Ratio between the number of instances and attributes.
+39,nr_attr,"Simple, stats & info-theory",general,PyMFE,Total number of attributes.
+40,nr_bin,"Simple, stats & info-theory",general,PyMFE,Number of binary attributes.
+41,nr_cat,"Simple, stats & info-theory",general,PyMFE,Number of categorical attributes.
+42,nr_class,"Simple, stats & info-theory",general,PyMFE,Number of distinct classes.
+43,nr_inst,"Simple, stats & info-theory",general,PyMFE,Number of instances (rows) in the dataset.
+44,nr_num,"Simple, stats & info-theory",general,PyMFE,Number of numeric features.
+45,attr_conc.mean,"Simple, stats & info-theory",info-theory,PyMFE,Compute concentration coef. of each pair of distinct attributes.
+46,attr_ent.mean,"Simple, stats & info-theory",info-theory,PyMFE,Compute Shannon’s entropy for each predictive attribute.
+47,class_conc.mean,"Simple, stats & info-theory",info-theory,PyMFE,Compute concentration coefficient between each attribute and class.
+48,class_ent,"Simple, stats & info-theory",info-theory,PyMFE,Compute target attribute Shannon’s entropy.
+49,eq_num_attr,"Simple, stats & info-theory",info-theory,PyMFE,Number of attributes equivalent for a predictive task.
+50,joint_ent.mean,"Simple, stats & info-theory",info-theory,PyMFE,Joint entropy between each attribute and class.
+51,mut_inf.mean,"Simple, stats & info-theory",info-theory,PyMFE,Mutual information between each attribute and target.
+52,ns_ratio,"Simple, stats & info-theory",info-theory,PyMFE,Noisiness of attributes.
+53,one_itemset.mean,"Simple, stats & info-theory",itemset,PyMFE,One itemset meta-feature.
+54,two_itemset.mean,"Simple, stats & info-theory",itemset,PyMFE,Two itemset meta-feature.
+55,best_node.mean,Landmarking,landmarking,PyMFE,Performance of a the best single decision tree node.
+56,best_node.mean.relative,Landmarking,landmarking,PyMFE,Performance of a the best single decision tree node.
+57,elite_nn.mean,Landmarking,landmarking,PyMFE,Performance of Elite Nearest Neighbor.
+58,elite_nn.mean.relative,Landmarking,landmarking,PyMFE,Performance of Elite Nearest Neighbor.
+59,linear_discr.mean,Landmarking,landmarking,PyMFE,Performance of the Linear Discriminant classifier.
+60,linear_discr.mean.relative,Landmarking,landmarking,PyMFE,Performance of the Linear Discriminant classifier.
+61,naive_bayes.mean,Landmarking,landmarking,PyMFE,Performance of the Naive Bayes classifier.
+62,naive_bayes.mean.relative,Landmarking,landmarking,PyMFE,Performance of the Naive Bayes classifier.
+63,one_nn.mean,Landmarking,landmarking,PyMFE,Performance of the 1-Nearest Neighbor classifier.
+64,one_nn.mean.relative,Landmarking,landmarking,PyMFE,Performance of the 1-Nearest Neighbor classifier.
+65,random_node.mean,Landmarking,landmarking,PyMFE,Performance of the single decision tree node model induced by a random attribute.
+66,random_node.mean.relative,Landmarking,landmarking,PyMFE,Performance of the single decision tree node model induced by a random attribute.
+67,worst_node.mean,Landmarking,landmarking,PyMFE,Performance of the single decision tree node model induced by the worst informative attribute.
+68,leaves,Model-based,model-based,PyMFE,Number of leaf nodes in the DT model.
+69,leaves_branch.mean,Model-based,model-based,PyMFE,Size of branches in the DT model.
+70,leaves_corrob.mean,Model-based,model-based,PyMFE,Leaves corroboration of the DT model.
+71,leaves_homo.mean,Model-based,model-based,PyMFE,DT model Homogeneity for every leaf node.
+72,leaves_per_class.mean,Model-based,model-based,PyMFE,Proportion of leaves per class in DT model.
+73,nodes,Model-based,model-based,PyMFE,Number of non-leaf nodes in DT model.
+74,nodes_per_attr,Model-based,model-based,PyMFE,Ratio of nodes per number of attributes in DT model.
+75,nodes_per_inst,Model-based,model-based,PyMFE,Ratio of non-leaf nodes per number of instances in DT model.
+76,nodes_per_level.mean,Model-based,model-based,PyMFE,Ratio of number of nodes per tree level in DT model.
+77,nodes_repeated.mean,Model-based,model-based,PyMFE,Number of repeated nodes in DT model.
+78,tree_depth.mean,Model-based,model-based,PyMFE,Depth of every node in the DT model.
+79,tree_imbalance.mean,Model-based,model-based,PyMFE,Tree imbalance for each leaf node.
+80,tree_shape.mean,Model-based,model-based,PyMFE,Tree shape for every leaf node.
+81,var_importance.mean,Model-based,model-based,PyMFE,Features importance of the DT model for each attribute.
+82,can_cor.mean,"Simple, stats & info-theory",statistical,PyMFE,Compute canonical correlations of data.
+83,cor.mean,"Simple, stats & info-theory",statistical,PyMFE,Absolute value of the correlation of distinct dataset column pairs.
+84,cov.mean,"Simple, stats & info-theory",statistical,PyMFE,Absolute value of the covariance of distinct dataset attribute pairs.
+85,eigenvalues.mean,"Simple, stats & info-theory",statistical,PyMFE,Eigenvalues of covariance matrix from dataset.
+86,g_mean.mean,"Simple, stats & info-theory",statistical,PyMFE,Geometric mean of each attribute.
+87,gravity,"Simple, stats & info-theory",statistical,PyMFE,Distance between minority and majority classes center of mass.
+88,h_mean.mean,"Simple, stats & info-theory",statistical,PyMFE,Harmonic mean of each attribute.
+89,iq_range.mean,"Simple, stats & info-theory",statistical,PyMFE,Interquartile range (IQR) of each attribute.
+90,kurtosis.mean,"Simple, stats & info-theory",statistical,PyMFE,Kurtosis of each attribute.
+91,lh_trace,"Simple, stats & info-theory",statistical,PyMFE,Lawley-Hotelling trace.
+92,mad.mean,"Simple, stats & info-theory",statistical,PyMFE,Median Absolute Deviation (MAD) adjusted by a factor.
+93,max.mean,"Simple, stats & info-theory",statistical,PyMFE,Maximum value from each attribute.
+94,mean.mean,"Simple, stats & info-theory",statistical,PyMFE,Mean value of each attribute.
+95,median.mean,"Simple, stats & info-theory",statistical,PyMFE,Median value from each attribute.
+96,min.mean,"Simple, stats & info-theory",statistical,PyMFE,Minimum value from each attribute.
+97,nr_cor_attr,"Simple, stats & info-theory",statistical,PyMFE,Number of distinct highly correlated pair of attributes.
+98,nr_disc,"Simple, stats & info-theory",statistical,PyMFE,Number of canonical correlation between each attribute and class.
+99,nr_norm,"Simple, stats & info-theory",statistical,PyMFE,Number of attributes normally distributed based in a given method.
+100,nr_outliers,"Simple, stats & info-theory",statistical,PyMFE,Number of attributes with at least one outlier value.
+101,p_trace,"Simple, stats & info-theory",statistical,PyMFE,Pillai’s trace.
+102,range.mean,"Simple, stats & info-theory",statistical,PyMFE,Range (max - min) of each attribute.
+103,roy_root,"Simple, stats & info-theory",statistical,PyMFE,Roy’s largest root.
+104,sd.mean,"Simple, stats & info-theory",statistical,PyMFE,Standard deviation of each attribute.
+105,sd_ratio,"Simple, stats & info-theory",statistical,PyMFE,Statistical test for homogeneity of covariances.
+106,skewness.mean,"Simple, stats & info-theory",statistical,PyMFE,Skewness for each attribute.
+107,sparsity.mean,"Simple, stats & info-theory",statistical,PyMFE,(Possibly normalized) sparsity metric for each attribute.
+108,t_mean.mean,"Simple, stats & info-theory",statistical,PyMFE,Trimmed mean of each attribute.
+109,var.mean,"Simple, stats & info-theory",statistical,PyMFE,Variance of each attribute.
+110,w_lambda,"Simple, stats & info-theory",statistical,PyMFE,Wilks’ Lambda value.
+111,worst_node.mean.relative,Landmarking,landmarking,PyMFE,Performance of the single decision tree node model induced by the worst informative attribute.
+112,F2_partial.0,Concept & complexity,overlapping,ImbCoL,Overlapping of the per-class bounding boxes (Class 0).
+113,F2_partial.1,Concept & complexity,overlapping,ImbCoL,Overlapping of the per-class bounding boxes (Class 1).
+114,F3_partial.0,Concept & complexity,overlapping,ImbCoL,Maximum individual feature efficiency (Class 0).
+115,F3_partial.1,Concept & complexity,overlapping,ImbCoL,Maximum individual feature efficiency (Class 1).
+116,F4_partial.0,Concept & complexity,overlapping,ImbCoL,Collective feature efficiency (Class 0).
+117,F4_partial.1,Concept & complexity,overlapping,ImbCoL,Collective feature efficiency (Class 1).
+118,N1_partial.0,Concept & complexity,neighborhood,ImbCoL,Fraction of points lying on the class boundary (Class 0).
+119,N1_partial.1,Concept & complexity,neighborhood,ImbCoL,Fraction of points lying on the class boundary (Class 1).
+120,N2_partial.0,Concept & complexity,neighborhood,ImbCoL,Average intra/inter class nearest neighbor distances (Class 0).
+121,N2_partial.1,Concept & complexity,neighborhood,ImbCoL,Average intra/inter class nearest neighbor distances (Class 1).
+122,N3_partial.0,Concept & complexity,neighborhood,ImbCoL,Leave-one-out error rate of the 1-nearest neighbor algorithm (Class 0).
+123,N3_partial.1,Concept & complexity,neighborhood,ImbCoL,Leave-one-out error rate of the 1-nearest neighbor algorithm (Class 1).
+124,N4_partial.0,Concept & complexity,neighborhood,ImbCoL,Nonlinearity of the one-nearest neighbor classifier (Class 0).
+125,N4_partial.1,Concept & complexity,neighborhood,ImbCoL,Nonlinearity of the one-nearest neighbor classifier (Class 1).
+126,T1_partial.0,Concept & complexity,neighborhood,ImbCoL,Fraction of maximum covering spheres on data (Class 0).
+127,T1_partial.1,Concept & complexity,neighborhood,ImbCoL,Fraction of maximum covering spheres on data (Class 1).
+128,L1_partial.0,Concept & complexity,linearity,ImbCoL,Distance of erroneous instances to a linear classifier (Class 0).
+129,L1_partial.1,Concept & complexity,linearity,ImbCoL,Distance of erroneous instances to a linear classifier (Class 1).
+130,L2_partial.0,Concept & complexity,linearity,ImbCoL,Training error of a linear classifier (Class 0).
+131,L2_partial.1,Concept & complexity,linearity,ImbCoL,Training error of a linear classifier (Class 1).
+132,L3_partial.0,Concept & complexity,linearity,ImbCoL,Nonlinearity of a linear classifier (Class 0).
+133,L3_partial.1,Concept & complexity,linearity,ImbCoL,Nonlinearity of a linear classifier (Class 1).

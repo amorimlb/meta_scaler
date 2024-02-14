@@ -1,0 +1,134 @@
+Meta-feature,Importance,Ranking,Type,Origin,Description
+worst_node.mean,0.075,1.000,Landmarking,PyMFE,Performance of the single decision tree node model induced by the worst informative attribute.
+min.mean,0.037,2.000,"Simple, stats & info-theory",PyMFE,Minimum value from each attribute.
+g_mean.mean,0.031,3.000,"Simple, stats & info-theory",PyMFE,Geometric mean of each attribute.
+conceptvar.mean,0.029,4.000,Concept & complexity,PyMFE,Concept variation that estimates the variability of class labels among examples.
+random_node.mean,0.027,5.000,Landmarking,PyMFE,Performance of the single decision tree node model induced by a random attribute.
+c2,0.024,6.000,Concept & complexity,PyMFE,Imbalance ratio.
+t1.mean,0.021,7.000,Concept & complexity,PyMFE,Fraction of hyperspheres covering data.
+class_ent,0.018,8.000,"Simple, stats & info-theory",PyMFE,Compute target attribute Shannon’s entropy.
+c1,0.018,9.000,Concept & complexity,PyMFE,Entropy of class proportions.
+tree_shape.mean,0.017,10.000,Model-based,PyMFE,Tree shape for every leaf node.
+h_mean.mean,0.017,11.000,"Simple, stats & info-theory",PyMFE,Harmonic mean of each attribute.
+n3.mean,0.014,12.000,Concept & complexity,PyMFE,Error rate of the nearest neighbor classifier.
+pb,0.014,13.000,Clustering,PyMFE,Pearson correlation between class matching and instance distances.
+wg_dist.mean,0.014,14.000,Concept & complexity,PyMFE,Weighted distance. Captures how dense or sparse is the example distribution.
+lsc,0.014,15.000,Concept & complexity,PyMFE,Local set average cardinality.
+N4_partial.1,0.014,16.000,Concept & complexity,ImbCoL,Nonlinearity of the one-nearest neighbor classifier (Class 1).
+n4.mean,0.013,17.000,Concept & complexity,PyMFE,Non-linearity of the k-NN Classifier.
+nodes_repeated.mean,0.013,18.000,Model-based,PyMFE,Number of repeated nodes in DT model.
+impconceptvar.mean,0.013,19.000,Concept & complexity,PyMFE,Improved concept variation that estimates the variability of class labels among examples.
+l2.mean,0.013,20.000,Concept & complexity,PyMFE,OVO subsets error rate of linear classifier.
+nre,0.012,21.000,Clustering,PyMFE,Normalized relative entropy.
+ch,0.012,22.000,Clustering,PyMFE,Calinski and Harabasz index.
+nr_cor_attr,0.012,23.000,"Simple, stats & info-theory",PyMFE,Number of distinct highly correlated pair of attributes.
+L1_partial.1,0.012,24.000,Concept & complexity,ImbCoL,Distance of erroneous instances to a linear classifier (Class 1).
+linear_discr.mean,0.012,25.000,Landmarking,PyMFE,Performance of the Linear Discriminant classifier.
+kurtosis.mean,0.012,26.000,"Simple, stats & info-theory",PyMFE,Kurtosis of each attribute.
+F2_partial.0,0.011,27.000,Concept & complexity,ImbCoL,Overlapping of the per-class bounding boxes (Class 0).
+joint_ent.mean,0.010,28.000,"Simple, stats & info-theory",PyMFE,Joint entropy between each attribute and class.
+nodes_per_attr,0.010,29.000,Model-based,PyMFE,Ratio of nodes per number of attributes in DT model.
+cor.mean,0.010,30.000,"Simple, stats & info-theory",PyMFE,Absolute value of the correlation of distinct dataset column pairs.
+mad.mean,0.010,31.000,"Simple, stats & info-theory",PyMFE,Median Absolute Deviation (MAD) adjusted by a factor.
+l1.mean,0.010,32.000,Concept & complexity,PyMFE,Sum of error distance by linear programming.
+one_nn.mean,0.010,33.000,Landmarking,PyMFE,Performance of the 1-Nearest Neighbor classifier.
+L3_partial.1,0.009,34.000,Concept & complexity,ImbCoL,Nonlinearity of a linear classifier (Class 1).
+best_node.mean,0.009,35.000,Landmarking,PyMFE,Performance of a the best single decision tree node.
+nr_outliers,0.009,36.000,"Simple, stats & info-theory",PyMFE,Number of attributes with at least one outlier value.
+L1_partial.0,0.009,37.000,Concept & complexity,ImbCoL,Distance of erroneous instances to a linear classifier (Class 0).
+sparsity.mean,0.009,38.000,"Simple, stats & info-theory",PyMFE,(Possibly normalized) sparsity metric for each attribute.
+F2_partial.1,0.009,39.000,Concept & complexity,ImbCoL,Overlapping of the per-class bounding boxes (Class 1).
+attr_conc.mean,0.009,40.000,"Simple, stats & info-theory",PyMFE,Compute concentration coef. of each pair of distinct attributes.
+T1_partial.1,0.009,41.000,Concept & complexity,ImbCoL,Fraction of maximum covering spheres on data (Class 1).
+L2_partial.0,0.008,42.000,Concept & complexity,ImbCoL,Training error of a linear classifier (Class 0).
+f2.mean,0.008,43.000,Concept & complexity,PyMFE,Volume of the overlapping region.
+max.mean,0.007,44.000,"Simple, stats & info-theory",PyMFE,Maximum value from each attribute.
+int,0.007,45.000,Clustering,PyMFE,INT index.
+skewness.mean,0.007,46.000,"Simple, stats & info-theory",PyMFE,Skewness for each attribute.
+vdu,0.007,47.000,Clustering,PyMFE,Dunn Index.
+gravity,0.007,48.000,"Simple, stats & info-theory",PyMFE,Distance between minority and majority classes center of mass.
+naive_bayes.mean,0.007,49.000,Landmarking,PyMFE,Performance of the Naive Bayes classifier.
+f1.mean,0.007,50.000,Concept & complexity,PyMFE,Maximum Fisher’s discriminant ratio.
+N4_partial.0,0.007,51.000,Concept & complexity,ImbCoL,Nonlinearity of the one-nearest neighbor classifier (Class 0).
+w_lambda,0.007,52.000,"Simple, stats & info-theory",PyMFE,Wilks’ Lambda value.
+L2_partial.1,0.006,53.000,Concept & complexity,ImbCoL,Training error of a linear classifier (Class 1).
+mut_inf.mean,0.006,54.000,"Simple, stats & info-theory",PyMFE,Mutual information between each attribute and target.
+nodes_per_level.mean,0.006,55.000,Model-based,PyMFE,Ratio of number of nodes per tree level in DT model.
+sil,0.006,56.000,Clustering,PyMFE,Mean silhouette value.
+N1_partial.1,0.006,57.000,Concept & complexity,ImbCoL,Fraction of points lying on the class boundary (Class 1).
+F3_partial.0,0.006,58.000,Concept & complexity,ImbCoL,Maximum individual feature efficiency (Class 0).
+f3.mean,0.006,59.000,Concept & complexity,PyMFE,Compute feature maximum individual efficiency.
+density,0.006,60.000,Concept & complexity,PyMFE,Average density of the network.
+t3,0.006,61.000,Concept & complexity,PyMFE,Average number of PCA dimensions per points.
+iq_range.mean,0.006,62.000,"Simple, stats & info-theory",PyMFE,Interquartile range (IQR) of each attribute.
+N2_partial.0,0.006,63.000,Concept & complexity,ImbCoL,Average intra/inter class nearest neighbor distances (Class 0).
+cov.mean,0.006,64.000,"Simple, stats & info-theory",PyMFE,Absolute value of the covariance of distinct dataset attribute pairs.
+f4.mean,0.006,65.000,Concept & complexity,PyMFE,Collective feature efficiency.
+L3_partial.0,0.006,66.000,Concept & complexity,ImbCoL,Nonlinearity of a linear classifier (Class 0).
+sd_ratio,0.005,67.000,"Simple, stats & info-theory",PyMFE,Statistical test for homogeneity of covariances.
+elite_nn.mean.relative,0.005,68.000,Landmarking,PyMFE,Performance of Elite Nearest Neighbor.
+attr_ent.mean,0.005,69.000,"Simple, stats & info-theory",PyMFE,Compute Shannon’s entropy for each predictive attribute.
+class_conc.mean,0.005,70.000,"Simple, stats & info-theory",PyMFE,Compute concentration coefficient between each attribute and class.
+hubs.mean,0.005,71.000,Concept & complexity,PyMFE,Hub score.
+tree_imbalance.mean,0.005,72.000,Model-based,PyMFE,Tree imbalance for each leaf node.
+F4_partial.0,0.005,73.000,Concept & complexity,ImbCoL,Collective feature efficiency (Class 0).
+mean.mean,0.005,74.000,"Simple, stats & info-theory",PyMFE,Mean value of each attribute.
+linear_discr.mean.relative,0.005,75.000,Landmarking,PyMFE,Performance of the Linear Discriminant classifier.
+elite_nn.mean,0.005,76.000,Landmarking,PyMFE,Performance of Elite Nearest Neighbor.
+nodes_per_inst,0.005,77.000,Model-based,PyMFE,Ratio of non-leaf nodes per number of instances in DT model.
+nr_inst,0.005,78.000,"Simple, stats & info-theory",PyMFE,Number of instances (rows) in the dataset.
+N1_partial.0,0.005,79.000,Concept & complexity,ImbCoL,Fraction of points lying on the class boundary (Class 0).
+N3_partial.0,0.004,80.000,Concept & complexity,ImbCoL,Leave-one-out error rate of the 1-nearest neighbor algorithm (Class 0).
+leaves_homo.mean,0.004,81.000,Model-based,PyMFE,DT model Homogeneity for every leaf node.
+median.mean,0.004,82.000,"Simple, stats & info-theory",PyMFE,Median value from each attribute.
+n2.mean,0.004,83.000,Concept & complexity,PyMFE,Ratio of intra and extra class nearest neighbor distance.
+vdb,0.004,84.000,Clustering,PyMFE,Davies and Bouldin Index.
+cohesiveness.mean,0.004,85.000,Concept & complexity,PyMFE,Improved version of the weighted distance. It captures how dense or sparse is the example distribution.
+n1,0.004,86.000,Concept & complexity,PyMFE,Fraction of borderline points.
+N3_partial.1,0.004,87.000,Concept & complexity,ImbCoL,Leave-one-out error rate of the 1-nearest neighbor algorithm (Class 1).
+T1_partial.0,0.003,88.000,Concept & complexity,ImbCoL,Fraction of maximum covering spheres on data (Class 0).
+lh_trace,0.003,89.000,"Simple, stats & info-theory",PyMFE,Lawley-Hotelling trace.
+inst_to_attr,0.003,90.000,"Simple, stats & info-theory",PyMFE,Ratio between the number of instances and attributes.
+N2_partial.1,0.003,91.000,Concept & complexity,ImbCoL,Average intra/inter class nearest neighbor distances (Class 1).
+ns_ratio,0.003,92.000,"Simple, stats & info-theory",PyMFE,Noisiness of attributes.
+var.mean,0.003,93.000,"Simple, stats & info-theory",PyMFE,Variance of each attribute.
+leaves_corrob.mean,0.003,94.000,Model-based,PyMFE,Leaves corroboration of the DT model.
+tree_depth.mean,0.003,95.000,Model-based,PyMFE,Depth of every node in the DT model.
+best_node.mean.relative,0.003,96.000,Landmarking,PyMFE,Performance of a the best single decision tree node.
+one_nn.mean.relative,0.003,97.000,Landmarking,PyMFE,Performance of the 1-Nearest Neighbor classifier.
+F3_partial.1,0.003,98.000,Concept & complexity,ImbCoL,Maximum individual feature efficiency (Class 1).
+sd.mean,0.003,99.000,"Simple, stats & info-theory",PyMFE,Standard deviation of each attribute.
+eq_num_attr,0.003,100.000,"Simple, stats & info-theory",PyMFE,Number of attributes equivalent for a predictive task.
+l3.mean,0.003,101.000,Concept & complexity,PyMFE,Non-Linearity of a linear classifier.
+can_cor.mean,0.003,102.000,"Simple, stats & info-theory",PyMFE,Compute canonical correlations of data.
+t_mean.mean,0.003,103.000,"Simple, stats & info-theory",PyMFE,Trimmed mean of each attribute.
+leaves_branch.mean,0.003,104.000,Model-based,PyMFE,Size of branches in the DT model.
+attr_to_inst,0.003,105.000,"Simple, stats & info-theory",PyMFE,Ratio between the number of attributes and instances.
+f1v.mean,0.003,106.000,Concept & complexity,PyMFE,Directional-vector maximum Fisher’s discriminant ratio.
+F4_partial.1,0.003,107.000,Concept & complexity,ImbCoL,Collective feature efficiency (Class 1).
+random_node.mean.relative,0.003,108.000,Landmarking,PyMFE,Performance of the single decision tree node model induced by a random attribute.
+range.mean,0.003,109.000,"Simple, stats & info-theory",PyMFE,Range (max - min) of each attribute.
+worst_node.mean.relative,0.003,110.000,Landmarking,PyMFE,Performance of the single decision tree node model induced by the worst informative attribute.
+p_trace,0.003,111.000,"Simple, stats & info-theory",PyMFE,Pillai’s trace.
+t2,0.002,112.000,Concept & complexity,PyMFE,Average number of features per dimension.
+roy_root,0.002,113.000,"Simple, stats & info-theory",PyMFE,Roy’s largest root.
+cls_coef,0.002,114.000,Concept & complexity,PyMFE,Clustering coefficient.
+naive_bayes.mean.relative,0.002,115.000,Landmarking,PyMFE,Performance of the Naive Bayes classifier.
+leaves,0.002,116.000,Model-based,PyMFE,Number of leaf nodes in the DT model.
+nr_norm,0.002,117.000,"Simple, stats & info-theory",PyMFE,Number of attributes normally distributed based in a given method.
+eigenvalues.mean,0.002,118.000,"Simple, stats & info-theory",PyMFE,Eigenvalues of covariance matrix from dataset.
+nodes,0.002,119.000,Model-based,PyMFE,Number of non-leaf nodes in DT model.
+two_itemset.mean,0.001,120.000,"Simple, stats & info-theory",PyMFE,Two itemset meta-feature.
+one_itemset.mean,0.001,121.000,"Simple, stats & info-theory",PyMFE,One itemset meta-feature.
+var_importance.mean,0.001,122.000,Model-based,PyMFE,Features importance of the DT model for each attribute.
+t4,0.000,123.000,Concept & complexity,PyMFE,Ratio of the PCA dimension to the original dimension.
+nr_attr,0.000,124.000,"Simple, stats & info-theory",PyMFE,Total number of attributes.
+nr_num,0.000,125.000,"Simple, stats & info-theory",PyMFE,Number of numeric features.
+sc,0.000,126.000,Clustering,PyMFE,Number of clusters with size smaller than a given size.
+cat_to_num,0.000,130.000,"Simple, stats & info-theory",PyMFE,Ratio between the number of categoric and numeric features.
+nr_class,0.000,130.000,"Simple, stats & info-theory",PyMFE,Number of distinct classes.
+nr_disc,0.000,130.000,"Simple, stats & info-theory",PyMFE,Number of canonical correlation between each attribute and class.
+nr_cat,0.000,130.000,"Simple, stats & info-theory",PyMFE,Number of categorical attributes.
+leaves_per_class.mean,0.000,130.000,Model-based,PyMFE,Proportion of leaves per class in DT model.
+freq_class.mean,0.000,130.000,"Simple, stats & info-theory",PyMFE,Relative frequency of each distinct class.
+nr_bin,0.000,130.000,"Simple, stats & info-theory",PyMFE,Number of binary attributes.
