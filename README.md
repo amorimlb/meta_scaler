@@ -1,5 +1,5 @@
 # Meta_scaler
-This repository is home for the files related to the paper "Meta-scaler: a meta-learning framework for the selection of scaling techniques" (https://doi.org/10.1109/TNNLS.2024.3366615). 
+Code, data and results related to the paper "Meta-scaler: a meta-learning framework for the selection of scaling techniques" (https://doi.org/10.1109/TNNLS.2024.3366615). 
 The files are arranged in the directory structure in a very intuitive way, but some explanation is required for the 'code' directory:
 - The code is distributed in 10 IPython Notebooks (.ipynb) and one R notebook (.rmd).
 - If one wants to reproduce the whole experiment, all the statistical analysis and reproduce all figures and tables in the paper, this is the order of execution:
